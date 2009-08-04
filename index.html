@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Bugzilla Homepage</title>
+	<link href="style.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body id="home">
+    <div id="wrapper">
+       <div id="header" role="banner">
+            <h1>Bugzilla</h1>
+            <p id="branding"><a href="http://mozilla.org"><img src="img/mozilla-logo.png" width="113" height="48" alt="Mozilla"/></a></p>
+            <div id="aux-nav">
+                <p>Welcome</p>
+                <p><a href="">Register</a> or <a href="">Login</a></p>
+            </div>
+            <ul id="nav" role="navigation">
+                <li><a href="">Home</a></li>
+                <li><a href="">New Bug</a></li>
+                <li><a href="">Requests</a></li>
+                <li><a href="">Reports</a></li>
+                <li>
+                    <a href="query.cgi">Search:</a>
+                    <form action="buglist.cgi" method="GET" role="search" class="quicksearch">
+                        <input type="hidden" name="query_format" value="specific"/>
+                        <input type="hidden" name="order" value="relevance desc"/>
+                        <input type="hidden" name="bug_status" value="__open__"/>
+                        <input name="quicksearch" aria-required="true" type="text"/>
+                        <input id="submit" name="submit" type="image" src="img/search-arrow.png" width="27" height="23" value="Search"/>
+                    </form>
+                </li>
+            </ul>
+            <div id="message">
+                <p>Welcome to 
+                <a href="http://www.mozilla.org/">mozilla.org</a>'s 
+                bug-tracking system, our database for recording bugs in and enhancement
+                requests for 
+                <a href="http://www.mozilla.com/firefox/">Firefox</a>, 
+                <a href="http://www.mozilla.com/thunderbird/">Thunderbird</a>,
+                <a href="http://www.mozilla.org/projects/seamonkey/">SeaMonkey</a>,
+                <a href="http://www.caminobrowser.org/">Camino</a>, 
+                and other mozilla.org projects.
+                </p>
+
+                <p>This bug-tracking system runs the "Bugzilla" software, which is also a mozilla.org product. If you need a bug-tracking server yourself, you can also get <a href="http://www.bugzilla.org/">more information</a> about Bugzilla.
+                </p>
+            </div>
+       </div>
+       <div id="content" role="main">
+            <div id="primary-wrapper">
+                <div id="primary">
+                    <h2>Common Actions</h2>
+                    <ul id="common_actions">
+                        <li id="report"><a href="">Report a new bug</a></li>
+                        <li id="search">
+                            Search for an existing bug:
+                            <form action="buglist.cgi" method="GET" role="search" class="quicksearch">
+                                <input type="hidden" name="query_format" value="specific"/>
+                                <input type="hidden" name="order" value="relevance desc"/>
+                                <input type="hidden" name="bug_status" value="__open__"/>
+                                <input name="quicksearch" aria-required="true" type="text"/>
+                                <input id="submit" name="submit" type="image" src="img/search-arrow.png" width="27" height="23" value="Search"/>
+                            </form>
+                        </li>
+                        <li id="summary"><a href="">See summary bug reports and charts</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div id="secondary">
+                <form action="" method="post" id="login">
+                    <h3>Login</h3>
+                    <p><label for="Bugzilla_login">E-mail address:</label>
+                    <input type="text" id="Bugzilla_login" name="Bugzilla_login" aria-required="true" /></p>
+                    <p><label for="Bugzilla_password">Password:</label>
+                    <input type="text" id="Bugzilla_password" name="Bugzilla_password" aria-required="true"/></p>
+                    <p><label for="Bugzilla_remember"><input type="checkbox" name="Bugzilla_remember" id="Bugzilla_remember" />Remember my Login</label></p>
+                    <p><label for="Bugzilla_restrictlogin"><input type="checkbox" name="Bugzilla_restrictlogin" id="Bugzilla_restrictlogin"/>Restrict this session to this IP address (using this option improves security)</label></p>
+                    <p><input id="submit" name="submit" type="submit" value="Login" /></p>
+                    <p><a href="">Create an account</a></p>
+                    <p><a href="">I forgot my password</a></p>
+                </form>
+            </div>
+       </div>
+    </div>
+</body>
+</html>

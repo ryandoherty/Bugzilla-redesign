@@ -1,0 +1,294 @@
+/*
+Copyright (c) 2009, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.net/yui/license.txt
+version: 2.7.0
+*/
+html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:inherit;font-weight:inherit;}del,ins{text-decoration:none;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:baseline;}sub{vertical-align:baseline;}legend{color:#000;}input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}input,button,textarea,select{*font-size:100%;}
+/*
+Copyright (c) 2009, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.net/yui/license.txt
+version: 2.7.0
+*/
+body{font:13px/1.231 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small;}select,input,button,textarea,button{font:99% arial,helvetica,clean,sans-serif;}table{font-size:inherit;font:100%;}pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:100%;}
+
+#nav:after, #content:after {
+    content: ".";
+    width: 0;
+    height: 0;
+    display: block;
+    clear: both;
+    line-height: 0;
+    visibility: hidden;
+}
+
+html {
+    background: #eee url(http://people.mozilla.com/~chowse/drop/bugzilla/mozilla/assets/header.png) top left repeat-x;
+}
+
+body {
+    color: #5d5d5d;
+    position: relative;
+    padding-top: 1px;
+}
+
+body, input {
+    font-family: Optima, "Palatino", sans-serif;
+}
+
+a:link {
+    text-decoration: underline;
+    color: #2c3754;
+}
+
+a:visited {
+    color: #42598a;
+}
+
+p {
+    margin: 0.5em 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0.5em 0;
+    color: #000;
+}
+
+h2 {
+    font-size: 146.5%;
+}
+
+h3 {
+    font-size: 138.5%;
+}
+
+h4 {
+    font-size: ;
+}
+
+input[type=checkbox] {
+    margin: 0 0.5em 0 0;
+}
+
+input[type=submit] {
+    background: #47577a;
+    border: 1px solid #3e4351;
+    padding: 0.2em 0.8em;
+    color: #fff;
+    font-size: 116%;
+    margin: 0.3em 0;
+    cursor: pointer;
+}
+
+input[type=text], #search .quicksearch input[type=text] {
+    border: #bbbdc1 2px solid;
+    font-size: 116%;
+    margin: 0 0 0.3em 0;
+}
+
+form p {
+    margin: 0.2em 0;
+}
+
+label {
+    display: block;
+    cursor: pointer;
+}
+
+ul {
+    margin: 0 0 0 1.2em;
+}
+
+li {
+    list-style-type: disc;
+}
+
+#wrapper {
+    margin: 0 auto;
+    max-width: 90em;
+    min-width: 70.1em;
+    padding: 0 2%;
+    width: 95%;
+    position: relative;
+}
+
+#header {
+    position: relative;
+    height: 283px;
+    padding-top: 1px;
+    margin: -1px 0 0 0;
+}
+
+#header h1 {
+    background: url(http://people.mozilla.com/~chowse/drop/bugzilla/mozilla/assets/mag_glass_3.png) top left no-repeat;
+    width: 326px;
+    height: 283px;
+    text-indent: -1000px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    margin: 0;
+}
+
+#branding {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+}
+
+#branding a {
+    display: block;
+}
+
+#aux-nav {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    color: #a3b2d6;
+}
+
+#aux-nav p {
+    display: inline;
+    padding: 2px 3px;
+}
+
+#aux-nav a:link {
+    color: #fff;
+}
+
+#aux-nav a:visited {
+    color: #ccc;
+}
+
+#home #message {
+    padding: 5px 0 0 270px;
+    position: relative;
+    height: 104px;
+}
+
+#message {
+    color: #fff;
+    font-size: 116%;
+    z-index: 10;
+}
+
+#message a {
+    color: #fff;
+}
+
+#home #nav {
+    position: relative;
+    margin: 82px 0 10px 260px;
+}
+
+#nav li {
+    display: block;
+    float: left;
+    font-size: 116%;
+    color: #fff;
+    vertical-align: middle;
+    margin: 0 30px 0 0;
+}
+
+#nav li:last-child {
+    margin: 0;
+}
+
+#nav li a {
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #fff;
+    vertical-align: top;
+}
+
+#nav li a:hover, #nav li.active a {
+    background: rgba(255, 255, 255, 0.2);
+    -moz-border-radius: 5px;
+}
+
+.quicksearch {
+    float:right;
+    margin:-2px 0 0;
+    vertical-align:top;
+}
+
+.quicksearch input {
+    border: #3e4351 1px solid;
+}
+
+.quicksearch input[type=text] {
+    height: 21px;
+    width: 140px;
+    margin: 0;
+}
+
+.quicksearch input[type=image] {
+    border: none;
+    vertical-align: bottom;
+}
+
+#content {
+    margin: -20px 0 0 0;
+    position: relative;
+}
+
+#secondary {
+    width: 225px;
+    float: left;
+}
+
+#primary-wrapper {
+    width: 100%;
+    float: right;
+    margin-left: -25em;
+}
+
+#primary {
+    margin: 0 0 0 270px;
+}
+
+#common_actions {
+    margin: 0;
+    font-size: 123.1%;
+}
+
+#common_actions a:link {
+    text-decoration: none;
+}
+
+#common_actions a:hover, #common_actions a:focus {
+    text-decoration: underline;
+}
+
+#common_actions li {
+    list-style-type: none;
+    margin: 1em 0;
+    background: transparent url(img/actions-sprite.png) no-repeat scroll;
+    padding: 4px 0 7px 50px;
+}
+
+#common_actions #report {
+    background-position: -84px top;
+}
+
+#common_actions #search {
+    background-position: -41px -40px;
+}
+
+#common_actions #summary {
+    background-position: 7px -95px;    
+}
+
+#search .quicksearch {
+    float: none;
+    display: inline;
+    vertical-align: middle;
+}
+
+#search .quicksearch input[type="image"] {
+    vertical-align: top;
+    margin: 1px 0 0 0;
+}
